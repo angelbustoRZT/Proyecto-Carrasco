@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <header>
+        <nav class="nav_bar">
+            <div class="nav_container">
+                <a class="nav_logo" href="./index.html">Carrasco HNOS</a>
+                <a class="nav_carrito" href="./pages/carrito.html">Carrito</a>
+            </div>
+        </nav>
+        <hr class="divider">
+        <ul class="nav_bar_2">
+            <li class="nav_item">
+                <a class="nav_link" href="./pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav_item barra_despl">
+                <a class="nav_link" href="./pages/productos.html">Productos</a>
+            </li>
+            <li class="nav_link">
+                <a href="./pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav_link">
+                <a href="./pages/zonas_de_envio.html">Zonas de envio</a>
+            </li>
+            <li class="nav_link">
+                <a href="./pages/terminos_y_condiciones.html">Terminos y Condiciones</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div class="slidershow middle">
+            <div class="slides">
+                <input type="radio" name="r" id="r1" checked>
+                <input type="radio" name="r" id="r2">
+                <input type="radio" name="r" id="r3">
+                <input type="radio" name="r" id="r4">
+                <input type="radio" name="r" id="r5">
+                <div class="slide s1">
+                    <img src="./imagenes/1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./imagenes/2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./imagenes/3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./imagenes/4.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./imagenes/5.jpg" alt="">
+                </div>
+            </div>
+            <div class="navigation">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+                <label for="r4" class="bar"></label>
+                <label for="r5" class="bar"></label>
+            </div>
+        </div>
+        <section class="service">
+            <article class="container_service">
+                <div class="item_service">
+                    <img class="icon_service" src="./imagenes/camion.svg" alt="">
+                    <div>
+                        <h3 class="title_service">
+                            ENVIOS SIN CARGO
+                        </h3>
+                        <P class="text_service">
+                            Envios sin cargo, consulte zonas de cobertura
+                        </P>
+                    </div>
+                </div>
+                <div class="item_service">
+                    <img class="icon_service" src="./imagenes/tarjeta.svg" alt="">
+                    <div>
+                        <h3 class="title_service">
+                            PAGOS
+                        </h3>
+                        <P class="text_service">
+                            En efectivo 10% de descuento o con tarjeta de credito/debito en la entrega con Posnet Inalambrico
+                        </P>
+                    </div>
+                </div>
+                <div class="item_service">
+                    <img class="icon_service" src="./imagenes/producto.svg" alt="">
+                    <div>
+                        <h3 class="title_service">
+                            PRODUCTOS DE CALIDAD
+                        </h3>
+                        <P class="text_service">
+                            Productos 100% originales de calidad
+                        </P>
+                    </div>
+                </div>
+                <div class="item_service">
+                    <img class="icon_service" src="./imagenes/wsp.svg" alt="">
+                    <div>
+                        <h3 class="title_service">
+                            CENTRO DE ATENCION
+                        </h3>
+                        <P class="text_service">
+                            Atencion directa por Whatsapp
+                        </P>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="container_cards">
+            <a href="./pages/frutas.html" class="link_card">
+                <div class="card">
+                    <img src="./imagenes/frutas.png" class="image_card" alt="">
+                    <div class="body_card">
+                        <p class="title_card">FRUTAS</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./pages/verduras.html" class="link_card">
+                <div class="card">
+                    <img src="./imagenes/verduras.png" class="image_card" alt="">
+                    <div class="body_card">
+                        <p class="title_card">VERDURAS</p>
+                    </div>
+                </div>
+            </a>
+        </section>
+    </main>
+</body>
+</html>
