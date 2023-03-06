@@ -8,7 +8,8 @@
 
 body {
   font-family: 'Titan One', cursive;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-color: #878887; }
 
 a {
   text-decoration: none;
@@ -135,7 +136,7 @@ input[name="r"] {
   justify-content: center;
   gap: 4rem;
   flex-wrap: wrap;
-  margin: 30px auto; }
+  margin: 6rem auto; }
   .container_cards .card {
     border: none;
     width: 100%; }
@@ -151,7 +152,8 @@ input[name="r"] {
   word-wrap: break-word;
   background-color: white;
   background-clip: border-box;
-  border-radius: 0.25rem; }
+  border-radius: 0 0 20px 20px;
+  transition: 1s; }
   .card img {
     width: 30rem;
     height: 20rem; }
@@ -165,8 +167,12 @@ input[name="r"] {
   background-color: black;
   color: white;
   justify-content: center;
+  text-align: center;
   border-radius: 0 0 20px 20px;
   padding: 2rem; }
+
+.card:hover {
+  scale: 1.1; }
 
 footer {
   width: 100%;
@@ -207,7 +213,7 @@ footer input[type='submit']:hover {
   color: #0b0c0d; }
 
 .list_footer {
-  margin: 40px auto;
+  margin: 20px auto;
   display: flex;
   list-style-type: none; }
   .list_footer li a {
