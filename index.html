@@ -10,36 +10,34 @@
 </head>
 <body>
     <header>
-        <nav class="nav_bar">
-            <div class="nav_container">
-                <a class="nav_logo" href="./index.html">Carrasco HNOS</a>
-                <a class="nav_carrito" href="./pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <div class="nav_bar">
+            <div class="logo">
+                <a href="#"><img src="./imagenes/logo.png" alt=""></a>
             </div>
-        </nav>
-        <hr class="divider">
-        <ul class="nav_bar_2">
-            <li class="nav_item">
-                <a class="nav_link" href="./pages/nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav_item barra_despl">
-                <a class="nav_link" href="./pages/productos.html">Productos</a>
-            </li>
-            <li class="nav_link">
-                <a href="./pages/contacto.html">Contacto</a>
-            </li>
-            <li class="nav_link">
-                <a href="./pages/zonas_de_envio.html">Zonas de envio</a>
-            </li>
-            <li class="nav_link">
-                <a href="./pages/terminos_y_condiciones.html">Terminos y Condiciones</a>
-            </li>
-        </ul>
+            <ul class="links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <a href="#" class="carrito"><i class="fa-solid fa-cart-shopping"></i></a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="dropdown_menu open">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#" class="carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </div>
+        </div>
     </header>
     <main>
         <section class="container_cards">
             <a href="./pages/frutas.html" class="link_card">
                 <div class="card">
-                    <img src="./imagenes/frutas.png" class="image_card" alt="">
+                    <i class="fa-solid fa-apple-whole"></i>
                     <div class="body_card">
                         <p class="title_card">FRUTAS</p>
                     </div>
@@ -47,7 +45,7 @@
             </a>
             <a href="./pages/verduras.html" class="link_card">
                 <div class="card">
-                    <img src="./imagenes/verduras.png" class="image_card" alt="">
+                    <i class="fa-solid fa-carrot"></i>
                     <div class="body_card">
                         <p class="title_card">VERDURAS</p>
                     </div>
@@ -111,6 +109,9 @@
         </form>
         <ul class="list_footer">
             <li>
+                <a href="#">Inicio</a>
+            </li>
+            <li>
                 <a href="#">Nosotros</a>
             </li>
             <li>
@@ -118,9 +119,6 @@
             </li>
             <li>
                 <a href="#">Contacto</a>
-            </li>
-            <li>
-                <a href="#">Terminos y condiciones</a>
             </li>
         </ul>
         <div class="social_media">
@@ -133,5 +131,18 @@
             &copy; 2023 Carrasco HNOS
         </p>
     </footer>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+        
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
 </body>
 </html>
