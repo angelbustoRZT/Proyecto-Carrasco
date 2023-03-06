@@ -53,19 +53,22 @@ header {
       transition: scale 0.2 ease; }
     header .nav_bar .carrito:hover {
       scale: 1.05;
-      color: white; }
-    header .nav_bar .carrito:active {
-      scale: 0.95; }
+      color: white;
+      transition: 1s; }
+    header .nav_bar .logo:hover {
+      scale: 1.1;
+      transition: 1s; }
   header a {
     font-size: 1rem; }
   header a:hover {
-    color: #34ac66; }
+    color: #34ac66;
+    transition: .5s; }
 
 .dropdown_menu {
   position: absolute;
   display: none;
   right: 2rem;
-  top: 60px;
+  top: 70px;
   width: 300px;
   height: 0;
   background: rgba(225, 255, 255, 0.1);
@@ -191,6 +194,10 @@ input[name="r"] {
   .item_service {
     font-size: 0.5rem; } }
 
+@media (max-width: 520px) {
+  .item_service {
+    font-size: 0.40rem; } }
+
 .container_cards {
   display: flex;
   justify-content: center;
@@ -234,6 +241,12 @@ input[name="r"] {
 .card:hover {
   scale: 1.1; }
 
+@media (max-width: 556px) {
+  .container_cards {
+    gap: 5rem; }
+    .container_cards .card i {
+      font-size: 15rem; } }
+
 footer {
   width: 100%;
   position: relative;
@@ -247,12 +260,12 @@ footer {
   padding: 20px; }
 
 .text {
-  font-size: 28px;
+  font-size: 1rem;
   margin: 40px auto; }
 
 footer input[type='email'] {
   width: calc(100vw - 40vw);
-  font-size: 25px;
+  font-size: 1rem;
   padding: 10px;
   border-radius: 30px 0 0 30px;
   outline: none;
@@ -266,7 +279,7 @@ footer input[type='submit'] {
   padding: 10px;
   color: white;
   background: #34ac66;
-  font-size: 25px;
+  font-size: 1rem;
   cursor: pointer; }
 
 footer input[type='submit']:hover {
@@ -279,7 +292,7 @@ footer input[type='submit']:hover {
   .list_footer li a {
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 1rem;
     padding: 20px; }
 
 .list_footer li a:hover {
@@ -289,36 +302,26 @@ footer input[type='submit']:hover {
   margin: 20px auto; }
   .social_media i {
     padding: 20px;
-    font-size: 25px;
+    font-size: 2rem;
     color: white; }
 
 .social_media i:hover {
   color: #34ac66; }
 
 @media (max-width: 810px) {
-  .text, footer input[type='email'], footer input[type='submit'] {
-    font-size: 20px; }
   .list_footer li a {
-    padding: 15px;
-    font-size: 15px; }
+    padding: 15px; }
   .social_media i {
     padding: 10px; } }
 
 @media (max-width: 610px) {
-  .text, footer input[type='email'], footer input[type='submit'] {
-    font-size: 14px; }
   .list_footer li a {
-    padding: 10px;
-    font-size: 12px; }
-  .social_media i {
-    font-size: 15px; } }
+    padding: 10px; } }
 
 @media (max-width: 470px) {
-  .text {
-    font-size: 12px; }
   .list_footer li a {
     padding: 5px; } }
 
-@media (max-width: 330px) {
-  .text {
-    font-size: 10px; } }
+@media (max-width: 360px) {
+  .list_footer li a {
+    font-size: 0.75rem; } }

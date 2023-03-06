@@ -48,3 +48,14 @@
 .card:hover {
     scale: 1.1;
 }
+
+@media (max-width:556px){
+    .container_cards {
+        gap: 5rem;
+        .card {
+            i {
+                font-size: 15rem;
+            }
+        }
+    }
+}
