@@ -8,7 +8,7 @@
         border: none;
         width: 100%;
         i {
-            font-size: 20rem;
+            font-size: 18rem;
             padding: 1rem;
         }
     }
@@ -49,12 +49,22 @@
     scale: 1.1;
 }
 
-@media (max-width:556px){
+@media (max-width:990px){
     .container_cards {
         gap: 5rem;
         .card {
             i {
-                font-size: 15rem;
+                font-size: 12rem;
+            }
+        }
+    }
+}
+
+@media (max-width:540px){
+    .container_cards {
+        .card {
+            i {
+                font-size: 9rem;
             }
         }
     }

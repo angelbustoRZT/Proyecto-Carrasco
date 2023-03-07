@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Titan One', cursive;
+  font-weight: normal;
   overflow-x: hidden;
   background-color: #878887; }
 
@@ -208,7 +209,7 @@ input[name="r"] {
     border: none;
     width: 100%; }
     .container_cards .card i {
-      font-size: 20rem;
+      font-size: 18rem;
       padding: 1rem; }
 
 .link_card a {
@@ -241,11 +242,15 @@ input[name="r"] {
 .card:hover {
   scale: 1.1; }
 
-@media (max-width: 556px) {
+@media (max-width: 990px) {
   .container_cards {
     gap: 5rem; }
     .container_cards .card i {
-      font-size: 15rem; } }
+      font-size: 12rem; } }
+
+@media (max-width: 540px) {
+  .container_cards .card i {
+    font-size: 9rem; } }
 
 footer {
   width: 100%;
@@ -325,3 +330,60 @@ footer input[type='submit']:hover {
 @media (max-width: 360px) {
   .list_footer li a {
     font-size: 0.75rem; } }
+
+.content {
+  max-width: 1170px;
+  margin: 4rem auto;
+  padding: 1.5rem;
+  color: white; }
+  .content .contactanos {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: white; }
+  .content .container_contact {
+    box-shadow: 0 0 30px #34ac66; }
+  .content .container_contact > * {
+    padding: 1rem; }
+  .content .container_form {
+    background: #222222; }
+    .content .container_form form {
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
+      .content .container_form form .block {
+        grid-column: 1 / 3; }
+      .content .container_form form p {
+        margin: 0;
+        padding: 1rem;
+        font-weight: normal; }
+      .content .container_form form button, .content .container_form form input, .content .container_form form textarea {
+        width: 100%;
+        padding: .7rem;
+        border: none;
+        background: none;
+        border-bottom: 1px solid #34ac66;
+        outline: none;
+        color: black; }
+      .content .container_form form button {
+        background: #34ac66;
+        border: 0;
+        text-transform: uppercase;
+        padding: 1rem; }
+      .content .container_form form button:hover, .content .container_form form button:focus {
+        color: white;
+        background: #07ad4c;
+        transition: background-color 1s ease-out;
+        outline: 0; }
+  .content .container_info {
+    background: #0b0c0d; }
+    .content .container_info h4, .content .container_info ul, .content .container_info p {
+      text-align: center;
+      margin: 0 0 1rem 0;
+      font-weight: normal; }
+    .content .container_info ul li {
+      padding: .3rem; }
+
+@media (min-width: 700px) {
+  .container_contact {
+    display: grid;
+    grid-template-columns: 2fr 1fr; } }

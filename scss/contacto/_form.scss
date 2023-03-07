@@ -1,0 +1,72 @@
+.content {
+    max-width: 1170px;
+    margin: 4rem auto;
+    padding: 1.5rem;
+    color: white;
+    .contactanos {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        color: white;
+    }
+    .container_contact {
+        box-shadow: 0 0 30px $verde;
+    }
+    .container_contact > * {
+        padding: 1rem;
+    }
+    .container_form {
+        background: #222222;
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .block {
+                grid-column: 1 / 3;
+            }
+            p {
+                margin: 0;
+                padding: 1rem;
+                font-weight: normal;
+            }
+            button, input, textarea {
+                width: 100%;
+                padding: .7rem;
+                border: none;
+                background: none;
+                border-bottom: 1px solid $verde;
+                outline: none;
+                color: black;
+            }
+            button {
+                background: $verde;
+                border: 0;
+                text-transform: uppercase;
+                padding: 1rem;
+            }
+            button:hover, button:focus {
+                color: white;
+                background: #07ad4c;
+                transition: background-color 1s ease-out;
+                outline: 0;
+            }
+        }
+    }
+    .container_info {
+        background: $negro;
+        h4, ul, p {
+            text-align: center;
+            margin: 0 0 1rem 0;
+            font-weight: normal;
+        }
+        ul li {
+            padding: .3rem;
+        }
+    }
+}
+
+@media (min-width:700px) {
+    .container_contact {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}
