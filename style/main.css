@@ -387,3 +387,52 @@ footer input[type='submit']:hover {
   .container_contact {
     display: grid;
     grid-template-columns: 2fr 1fr; } }
+
+.container_nosotros {
+  background: #222222;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 30px #34ac66;
+  font-size: 1rem; }
+  .container_nosotros h3, .container_nosotros p, .container_nosotros h4 {
+    font-weight: normal;
+    padding-bottom: 1.5rem; }
+
+.container_map {
+  max-width: 800px;
+  width: 100%; }
+
+.googlemap {
+  width: 100%; }
+
+@media (max-width: 1300px) {
+  .container_nosotros {
+    max-width: 1000px; } }
+
+@media (max-width: 1100px) {
+  .container_nosotros {
+    max-width: 800px; } }
+
+@media (max-width: 900px) {
+  .container_nosotros {
+    max-width: 600px; } }
+
+@media (max-width: 700px) {
+  .container_nosotros {
+    max-width: 400px;
+    font-size: 0.75rem; } }
+
+@media (max-width: 500px) {
+  .container_nosotros {
+    max-width: 200px;
+    max-height: 500px;
+    font-size: 0.5rem; }
+  .googlemap {
+    height: 250px; } }

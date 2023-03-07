@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Carrasco HNOS</title>
+    <link rel="shortcut icon" href="../imagenes/carrot-solid.svg">
+    <!--ANIMATED CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--CSS-->
+    <link rel="stylesheet" href="../style/main.css">
+</head>
+<body>
+    <header>
+        <div class="nav_bar">
+            <div class="logo">
+                <a href="../index.html"><img src="../imagenes/logo.png" alt=""></a>
+            </div>
+            <ul class="links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+            <a href="#" class="carrito"><i class="fa-solid fa-cart-shopping"></i></a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="dropdown_menu open">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="#" class="carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </div>
+        </div>
+    </header>
+    <div class="container_nosotros">
+        <h3>Acerca de Carraco HNOS</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam omnis eum veniam odio corporis error molestias assumenda cumque commodi sed dolore ipsum quam aperiam tempore facere, neque laboriosam quas nemo repellendus expedita similique impedit repudiandae? Dolorem voluptatem neque alias aspernatur!</p>
+        <h4>¿Donde encontrarnos?</h4>
+        <div class="container_map">
+            <p><iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.6361893872445!2d-68.82760478413759!3d-32.93420907859016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0beeb1b7980f%3A0x8f51d12c4dad4d6b!2sMercado%20Cooperativo%20Concentracion%20de%20Godoy%20Cruz!5e0!3m2!1ses!2sar!4v1678206900125!5m2!1ses!2sar" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </div>
+    </div>
+    <footer>
+        <p class="text">Ingresa tu email para recibir ofertas especiales</p>
+        <form>
+            <input type="email" required>
+            <input type="submit" value="Enviar">
+        </form>
+        <ul class="list_footer">
+            <li>
+                <a href="#">Inicio</a>
+            </li>
+            <li>
+                <a href="#">Nosotros</a>
+            </li>
+            <li>
+                <a href="#">Productos</a>
+            </li>
+            <li>
+                <a href="#">Contacto</a>
+            </li>
+        </ul>
+        <div class="social_media">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p class="copyrights">
+            &copy; 2023 Carrasco HNOS
+        </p>
+    </footer>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+        
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-bars'
+            : 'fa-solid fa-xmark'
+        }
+    </script>
+</body>
+</html>
