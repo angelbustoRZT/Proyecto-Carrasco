@@ -13,12 +13,18 @@ let cartIcon = document.querySelector('#icon_cart')
 let cartIcon2 = document.querySelector('#icon_cart2')
 let cart = document.querySelector('.cart')
 let closeCart = document.querySelector('#cart_close')
+let navPrueba = document.querySelector('#prueba')
 //OPEN CART
 cartIcon.onclick = () => {
   cart.classList.add("active");
 };
 cartIcon2.onclick = () => {
   cart.classList.add("active");
+  navPrueba.classList.toggle('open')
+  const isOpen = navPrueba.classList.contains('open')
+  toggleBtnIcon.classList = isOpen
+  ? 'fa-solid fa-bars'
+  : 'fa-solid fa-xmark'
 };
 //CLOSE CART
 closeCart.onclick = () => {
