@@ -27,7 +27,23 @@
                 <li><a href="./productos.html">Productos</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
-            <a href="#" class="carrito"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i class="fa-solid fa-cart-shopping carrito" id="icon_cart"></i>
+            <!--CART-->
+            <div class="cart">
+                <h2 class="title_cart">Tus compras</h2>
+                <!--CONTAINER CART-->
+                <div class="container_cart">
+                </div>
+                <!--TOTAL-->
+                <div class="total">
+                    <div class="title_total">Total</div>
+                    <div class="price_total">$0</div>
+                </div>
+                <!--BUY BUTTON-->
+                <button type="button" class="btn_buy">Comprar</button>
+                <!--CLOSE CART-->
+                <i class="fa-solid fa-x" id="cart_close"></i>
+            </div>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -36,7 +52,7 @@
                 <li><a href="./nosotros.html">Nosotros</a></li>
                 <li><a href="./productos.html">Productos</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="#" class="carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><i class="fa-solid fa-cart-shopping carrito" id="icon_cart2"></i></li>
             </div>
         </div>
     </header>
@@ -136,61 +152,61 @@
         <div class="container_products">
             <!--Box 1-->
             <div class="box">
-                <img src="../imagenes/verduras/cebolla.png" alt="">
+                <img src="../imagenes/verduras/cebolla.png" alt="" class="img_product">
                 <span>Carrasco HNOS</span>
-                <h2>Cebolla</h2>
-                <h3 class="price">$9.99 <span>/kg</span></h3>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <h2 class="product_title">Cebolla</h2>
+                <h3 class="price">$9.99</h3>
+                <i class="fa-solid fa-cart-shopping add_cart"></i>
                 <i class="fa-regular fa-heart"></i>
                 <span class="discount">-25%</span>
             </div>
             <!--Box 2-->
             <div class="box">
-                <img src="../imagenes/verduras/brocoli.png" alt="">
+                <img src="../imagenes/verduras/brocoli.png" alt="" class="img_product">
                 <span>Carrasco HNOS</span>
-                <h2>Brocoli</h2>
-                <h3 class="price">$9.99 <span>/kg</span></h3>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <h2 class="product_title">Brocoli</h2>
+                <h3 class="price">$9.99</h3>
+                <i class="fa-solid fa-cart-shopping add_cart"></i>
                 <i class="fa-regular fa-heart"></i>
                 <span class="discount">-25%</span>
             </div>
             <!--Box 3-->
             <div class="box">
-                <img src="../imagenes/verduras/papa.png" alt="">
+                <img src="../imagenes/verduras/papa.png" alt="" class="img_product">
                 <span>Carrasco HNOS</span>
-                <h2>Papa</h2>
-                <h3 class="price">$9.99 <span>/kg</span></h3>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <h2 class="product_title">Papa</h2>
+                <h3 class="price">$9.99</h3>
+                <i class="fa-solid fa-cart-shopping add_cart"></i>
                 <i class="fa-regular fa-heart"></i>
                 <span class="discount">-25%</span>
             </div>
             <!--Box 4-->
             <div class="box">
-                <img src="../imagenes/verduras/zanahoria.png" alt="">
+                <img src="../imagenes/verduras/zanahoria.png" alt="" class="img_product">
                 <span>Carrasco HNOS</span>
-                <h2>Zanahoria</h2>
-                <h3 class="price">$9.99 <span>/kg</span></h3>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <h2 class="product_title">Zanahoria</h2>
+                <h3 class="price">$9.99</h3>
+                <i class="fa-solid fa-cart-shopping add_cart"></i>
                 <i class="fa-regular fa-heart"></i>
                 <span class="discount">-25%</span>
             </div>
             <!--Box 5-->
             <div class="box">
-                <img src="../imagenes/frutas/apple.png" alt="">
+                <img src="../imagenes/frutas/apple.png" alt="" class="img_product">
                 <span>Carrasco HNOS</span>
-                <h2>Manzana</h2>
-                <h3 class="price">$9.99 <span>/kg</span></h3>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <h2 class="product_title">Manzana</h2>
+                <h3 class="price">$9.99</h3>
+                <i class="fa-solid fa-cart-shopping add_cart"></i>
                 <i class="fa-regular fa-heart"></i>
                 <span class="discount">-25%</span>
             </div>
             <!--Box 6-->
             <div class="box">
-                <img src="../imagenes/verduras/lechuga.png" alt="">
+                <img src="../imagenes/verduras/lechuga.png" alt="" class="img_product">
                 <span>Carrasco HNOS</span>
-                <h2>Lechuga</h2>
-                <h3 class="price">$9.99 <span>/kg</span></h3>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <h2 class="product_title">Lechuga</h2>
+                <h3 class="price">$9.99</h3>
+                <i class="fa-solid fa-cart-shopping add_cart"></i>
                 <i class="fa-regular fa-heart"></i>
                 <span class="discount">-25%</span>
             </div>
@@ -226,6 +242,20 @@
             &copy; 2023 Carrasco HNOS
         </p>
     </footer>
+    <!--NAV MENU-->
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+        
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-bars'
+            : 'fa-solid fa-xmark'
+        }
+    </script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!--LINK TO JS-->
