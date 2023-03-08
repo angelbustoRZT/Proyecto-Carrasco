@@ -5,10 +5,11 @@
     width: 360px;
     min-height: 100vh;
     padding: 20px;
-    background: #2222;
+    background: $gris;
     box-shadow: 0 0 30px $verde;
     transition: .3s;
     z-index: 100;
+    color: white;
     .title_cart {
         text-align: center;
         font-size: 1.5rem;
@@ -84,6 +85,8 @@
     font-size: 1rem;
     font-weight: normal;
     cursor: pointer;
+    transition: scale 0.2 ease;
+    border-radius: 20px;
 }
 
 .btn_buy:hover {
@@ -95,6 +98,12 @@
     top: 1rem;
     right: .8rem;
     font-size: 1.5rem;
-    color: $negro;
+    color: white;
     cursor: pointer;
+}
+
+@media (max-width:360px) {
+    .cart {
+        width: 320px;
+    }
 }

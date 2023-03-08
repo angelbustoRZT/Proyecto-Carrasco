@@ -15,7 +15,7 @@
     <header>
         <div class="nav_bar">
             <div class="logo">
-                <a href="./index.html"><img src="./imagenes/logo.png" alt=""></a>
+                <a href="./index.html"><img src="../imagenes/logo.png" alt=""></a>
             </div>
             <ul class="links">
                 <li><a href="./index.html">Inicio</a></li>
@@ -23,16 +23,32 @@
                 <li><a href="./pages/productos.html">Productos</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
-            <a href="#" class="carrito"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i class="fa-solid fa-cart-shopping carrito" id="icon_cart"></i>
+            <!--CART-->
+            <div class="cart">
+                <h2 class="title_cart">Tus compras</h2>
+                <!--CONTAINER CART-->
+                <div class="container_cart">
+                </div>
+                <!--TOTAL-->
+                <div class="total">
+                    <div class="title_total">Total</div>
+                    <div class="price_total">$0</div>
+                </div>
+                <!--BUY BUTTON-->
+                <button type="button" class="btn_buy">Comprar</button>
+                <!--CLOSE CART-->
+                <i class="fa-solid fa-x" id="cart_close"></i>
+            </div>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
-            <div class="dropdown_menu open">
+            <div class="dropdown_menu open" id="prueba">
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./pages/nosotros.html">Nosotros</a></li>
                 <li><a href="./pages/productos.html">Productos</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
-                <li><a href="#" class="carrito"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><i class="fa-solid fa-cart-shopping carrito" id="icon_cart2"></i></li>
             </div>
         </div>
     </header>
@@ -142,6 +158,7 @@
             &copy; 2023 Carrasco HNOS
         </p>
     </footer>
+    <!--NAV MENU-->
     <script>
         const toggleBtn = document.querySelector('.toggle_btn')
         const toggleBtnIcon = document.querySelector('.toggle_btn i')
@@ -155,5 +172,7 @@
             : 'fa-solid fa-xmark'
         }
     </script>
+    <!--LINK TO JS-->
+    <script src="../js/main2.js"></script>
 </body>
 </html>
