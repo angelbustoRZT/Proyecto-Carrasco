@@ -53,9 +53,18 @@
 
 @media (max-width:500px) {
     .container_nosotros {
-        max-width: 200px;
-        max-height: 500px;
-        font-size: 0.5rem;
+        max-width: 400px;
+        max-height: 540px;
+        font-size: 0.7rem;
+    }
+    .googlemap {
+        height: 300px;
+    }
+}
+
+@media (max-width:430px) {
+    .container_nosotros {
+        max-width: 300px;
     }
     .googlemap {
         height: 250px;
