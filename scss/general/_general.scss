@@ -8,6 +8,16 @@
     text-decoration: none;
 }
 
+::-webkit-scrollbar {
+    width: .5rem;
+    background: rgb(185, 238, 185);
+}
+
+::-webkit-scrollbar-thumb {
+    width: .5rem;
+    background: $verde;
+}
+
 body {
     font-family: 'Titan One', cursive;
     font-weight: normal;

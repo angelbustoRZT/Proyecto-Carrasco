@@ -7,6 +7,12 @@
     .card {
         border: none;
         width: 100%;
+        img {
+            width: 400px;
+            height: 300px;
+            object-fit: contain;
+            object-position: center;
+        }
         i {
             font-size: 18rem;
             padding: 1rem;
