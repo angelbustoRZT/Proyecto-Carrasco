@@ -54,7 +54,15 @@ function ready(){
 }
 //BUY BUTTON
 function buyBottonClicked(){
-  alert("Tu pedido esta listo");
+    Swal.fire({
+        icon: 'success',
+        title: 'Tu pedido esta listo!',
+        width: 600,
+        padding: '3em',
+        color: '#fff',
+        background: '#0b0c0d',
+        confirmButtonColor: '#34ac66',
+    });
   var cartContent = document.getElementsByClassName("container_cart")[0];
   while (cartContent.hasChildNodes()) {
     cartContent.removeChild(cartContent.firstChild);
@@ -97,13 +105,13 @@ function addProductToCart(title, price, productImg) {
     if (cartItemsNames[i].innerHTML == title) {
         Swal.fire({
             icon: 'error',
-            title: 'Tu producto ya esta agregado',
+            title: 'Este producto ya esta agregado',
             width: 600,
             padding: '3em',
             color: '#fff',
-            background: '#34ac66',
-            confirmButtonColor: '#0b0c0d',
-          })
+            background: '#0b0c0d',
+            confirmButtonColor: '#34ac66',
+        })
       return;
     }
   }
