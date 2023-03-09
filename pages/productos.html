@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--CSS-->
     <link rel="stylesheet" href="../style/main.css">
-     <!-- Link Swiper's CSS -->
+    <!--Link Swiper's CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!---->
 </head>
 <body>
     <header>
@@ -44,10 +45,11 @@
                 <!--CLOSE CART-->
                 <i class="fa-solid fa-x" id="cart_close"></i>
             </div>
+            <!--MENU DESPLEGABLE-->
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
-            <div class="dropdown_menu open" id="prueba">
+            <div class="dropdown_menu open">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./nosotros.html">Nosotros</a></li>
                 <li><a href="./productos.html">Productos</a></li>
@@ -242,24 +244,13 @@
             &copy; 2023 Carrasco HNOS
         </p>
     </footer>
-    <!--NAV MENU-->
-    <script>
-        const toggleBtn = document.querySelector('.toggle_btn')
-        const toggleBtnIcon = document.querySelector('.toggle_btn i')
-        const dropDownMenu = document.querySelector('.dropdown_menu')
-
-        toggleBtn.onclick = function () {
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-            toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-bars'
-            : 'fa-solid fa-xmark'
-        }
-    </script>
+    <!--ALERT-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!--LINK TO JS-->
+    <script src="../js/menu.js"></script>
     <script src="../js/main2.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="../js/swiper.js"></script>
 </body>
 </html>

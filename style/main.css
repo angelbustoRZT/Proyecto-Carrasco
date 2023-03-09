@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,7 +15,7 @@
   background: #34ac66; }
 
 body {
-  font-family: 'Titan One', cursive;
+  font-family: 'Fira Sans', sans-serif;
   font-weight: normal;
   overflow-x: hidden;
   background-color: #878887; }

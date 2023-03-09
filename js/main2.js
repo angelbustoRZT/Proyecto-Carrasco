@@ -94,8 +94,16 @@ function addProductToCart(title, price, productImg) {
   var cartItems = document.getElementsByClassName("container_cart")[0];
   var cartItemsNames = cartItems.getElementsByClassName("product_title_cart");
   for (var i = 0; i < cartItemsNames.length; i++) {
-    if (cartItemsNames[i].innerText == title) {
-      alert("Ya agregaste este producto al carrito");
+    if (cartItemsNames[i].innerHTML == title) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Tu producto ya esta agregado',
+            width: 600,
+            padding: '3em',
+            color: '#fff',
+            background: '#34ac66',
+            confirmButtonColor: '#0b0c0d',
+          })
       return;
     }
   }

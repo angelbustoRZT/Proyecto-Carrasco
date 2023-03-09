@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--CSS-->
     <link rel="stylesheet" href="./style/main.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 <body>
     <header>
@@ -52,6 +54,40 @@
             </div>
         </div>
     </header>
+        <!--HOME-->
+        <section class="home swiper" id="home">
+            <div class="swiper-wrapper">
+                <!--SLIDE 1-->
+                <div class="swiper-slide container">
+                    <div class="home-text">
+                        <span>Categorias generales</span>
+                        <h1>FRUTAS</h1>
+                        <a href="#" class="btn">Comprar<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <img src="../imagenes/frutas/apple.png" alt="">
+                </div>
+                <!--SLIDE 2-->
+                <div class="swiper-slide container">
+                    <div class="home-text">
+                        <span>Categorias generales</span>
+                        <h1>VERDURAS</h1>
+                        <a href="#" class="btn">Comprar<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <img src="../imagenes/verduras/zanahoria.png" alt="">
+                </div>
+                <!--SLIDE 3-->
+                <div class="swiper-slide container">
+                    <div class="home-text">
+                        <span>Categorias generales</span>
+                        <h1>OFERTAS</h1>
+                        <a href="#" class="btn">Comprar<i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <img class="star" src="../imagenes/star.png" alt="">
+                </div>
+            </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+        </section>
     <main>
         <section class="container_cards">
             <a href="./pages/frutas.html" class="link_card">
@@ -158,21 +194,11 @@
             &copy; 2023 Carrasco HNOS
         </p>
     </footer>
-    <!--NAV MENU-->
-    <script>
-        const toggleBtn = document.querySelector('.toggle_btn')
-        const toggleBtnIcon = document.querySelector('.toggle_btn i')
-        const dropDownMenu = document.querySelector('.dropdown_menu')
-        
-        toggleBtn.onclick = function () {
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-            toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-bars'
-            : 'fa-solid fa-xmark'
-        }
-    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!--LINK TO JS-->
+    <script src="./js/menu.js"></script>
     <script src="./js/main2.js"></script>
+    <script src="./js/swiper.js"></script>
 </body>
 </html>
