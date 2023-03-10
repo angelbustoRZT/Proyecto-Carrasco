@@ -73,60 +73,75 @@
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
     </section>
-    <main>
-        <!--BTN WSP-->
-        <a href="https://api.whatsapp.com/send?phone=26111111" class="btn_wsp" target="_blank">
+    <!--BTN WSP-->
+    <a href="https://api.whatsapp.com/send?phone=26111111" class="btn_wsp" target="_blank">
             <i class="fa-brands fa-whatsapp"></i>
-        </a>
-        <section class="service">
-            <article class="container_service">
-                <div class="item_service">
-                    <img class="icon_service" src="./imagenes/camion.svg" alt="">
-                    <div>
-                        <h3 class="title_service">
-                            ENVIOS SIN CARGO
-                        </h3>
-                        <P class="text_service">
-                            Envios sin cargo, consulte zonas de cobertura
-                        </P>
+    </a>
+    <!--MAIN IMG-->
+    <section>
+        <div class="main_img">
+            <img src="./imagenes/main.jpg" alt="">
+            <div class="container_card">
+                <div class="card">
+                    <div class="content2">
+                        <h2></h2>
+                        <h3>TIENDA ONLINE</h3>
+                        <p>Bienvenidos a la tienda de CARRASCO HNOS, les presentamos las mejores frutas y verduras al mejor precio</p>
+                        <a href="./pages/productos.html"><span>COMPRAR</span><i></i></a>
                     </div>
                 </div>
-                <div class="item_service">
-                    <img class="icon_service" src="./imagenes/tarjeta.svg" alt="">
-                    <div>
-                        <h3 class="title_service">
-                            PAGOS
-                        </h3>
-                        <P class="text_service">
-                            En efectivo 10% de descuento o con tarjeta de credito/debito en la entrega con Posnet Inalambrico
-                        </P>
-                    </div>
+            </div>
+        </div>
+    </section>
+    <!--SERVICE-->
+    <section class="service">
+        <article class="container_service">
+            <div class="item_service">
+                <img class="icon_service" src="./imagenes/camion.svg" alt="">
+                <div>
+                    <h3 class="title_service">
+                        ENVIOS SIN CARGO
+                    </h3>
+                    <P class="text_service">
+                        Envios sin cargo, consulte zonas de cobertura
+                    </P>
                 </div>
-                <div class="item_service">
-                    <img class="icon_service" src="./imagenes/producto.svg" alt="">
-                    <div>
-                        <h3 class="title_service">
-                            PRODUCTOS DE CALIDAD
-                        </h3>
-                        <P class="text_service">
-                            Productos 100% originales de calidad
-                        </P>
-                    </div>
+            </div>
+            <div class="item_service">
+                <img class="icon_service" src="./imagenes/tarjeta.svg" alt="">
+                <div>
+                    <h3 class="title_service">
+                        PAGOS
+                    </h3>
+                    <P class="text_service">
+                        En efectivo 10% de descuento o con tarjeta de credito/debito en la entrega con Posnet Inalambrico
+                    </P>
                 </div>
-                <div class="item_service">
-                    <img class="icon_service" src="./imagenes/wsp.svg" alt="">
-                    <div>
-                        <h3 class="title_service">
-                            CENTRO DE ATENCION
-                        </h3>
-                        <P class="text_service">
-                            Atencion directa por Whatsapp
-                        </P>
-                    </div>
+            </div>
+            <div class="item_service">
+                <img class="icon_service" src="./imagenes/producto.svg" alt="">
+                <div>
+                    <h3 class="title_service">
+                        PRODUCTOS DE CALIDAD
+                    </h3>
+                    <P class="text_service">
+                        Productos 100% originales de calidad
+                    </P>
                 </div>
-            </article>
-        </section>
-    </main>
+            </div>
+            <div class="item_service">
+                <img class="icon_service" src="./imagenes/wsp.svg" alt="">
+                <div>
+                    <h3 class="title_service">
+                        CENTRO DE ATENCION
+                    </h3>
+                    <P class="text_service">
+                        Atencion directa por Whatsapp
+                    </P>
+                </div>
+            </div>
+        </article>
+    </section>
     <footer>
         <p class="text">Ingresa tu email para recibir ofertas especiales</p>
         <form>
@@ -157,6 +172,14 @@
             &copy; 2023 Carrasco HNOS
         </p>
     </footer>
+    <!--CARD-->
+    <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelector(".card"),{
+		max: 25,
+		speed: 400,
+	    });
+    </script>
     <!--ALERT-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Swiper JS -->

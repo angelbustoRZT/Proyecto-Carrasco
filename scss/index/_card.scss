@@ -1,0 +1,141 @@
+.container_card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .card {
+        position: relative;
+        width: 80%;
+        height: 60%;
+        box-shadow: $neon;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(5px);
+        .content2 {
+            text-align: center;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: .5s;
+            h2 {
+                position: absolute;
+                top: -80px;
+                right: 30px;
+                font-size: 8rem;
+                color:rgba(255, 255, 255, 0.5);
+                pointer-events: none;
+            }
+            h3 {
+                font-size: 3rem;
+                color: $verde;
+                padding-bottom: 1rem;
+                font-weight: 800;
+            }
+            p {
+                font-size: 2rem;
+                color: white;
+                padding-bottom: 1rem;
+                font-weight: 600;
+            }
+            a {
+                position: relative;
+                display: inline-block;
+                padding: 10px 30px;
+                margin-top: 15px;
+                background: white;
+                color: white;
+                font-size: 2rem;
+                transition: .5s;
+                letter-spacing: .1rem;
+                span {
+                    position: relative;
+                    z-index: 100;
+                }
+                i {
+                    position: absolute;
+                    inset: 0;
+                    display: block;
+                }
+                i::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 80%;
+                    width: 10px;
+                    height: 4px;
+                    background: $negro;
+                    transform: translateX(-50%) skewX(325deg);
+                    transition: .5s;
+                }
+                i::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 20%;
+                    width: 10px;
+                    height: 4px;
+                    background: $negro;
+                    transform: translateX(-50%) skewX(325deg);
+                    transition: .5s;
+                }
+            }
+            a:hover {
+                letter-spacing: .25rem;
+                background: $verde;
+                color: $verde;
+                box-shadow: 0 0 35px $verde;
+                i::before {
+                    width: 20px;
+                    left: 20%;
+                }
+                i::after {
+                    width: 20px;
+                    left: 80%;
+                }
+            }
+            a:before {
+                content: '';
+                position: absolute;
+                inset: 2px;
+                background: $negro;
+            }
+        }
+    }
+    .card:hover {
+        .content2 {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+}
+
+@media (max-width:580px) {
+    .container_card {
+        .card {
+            width: 60%;
+            height: 40%;
+            .content2 {
+                h2 {
+                    font-size: 4rem;
+                }
+                h3 {
+                    font-size: 1.5rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+                a {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
