@@ -180,35 +180,37 @@ input[name="r"] {
   background-color: rgba(19, 18, 18, 0.1);
   width: 100%;
   color: #212529; }
+  .service .container_service {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+    width: 100%; }
+    .service .container_service .item_service {
+      display: flex;
+      width: 100%;
+      gap: 10px;
+      margin-right: 0.8rem;
+      font-size: 1em; }
+      .service .container_service .item_service i {
+        font-size: 30px; }
 
-.container_service {
-  display: flex;
-  padding: 1rem;
-  justify-content: space-evenly;
-  width: 100%; }
+@media (max-width: 600px) {
+  .service .container_service .item_service {
+    font-size: .75em; }
+    .service .container_service .item_service i {
+      font-size: 20px; } }
 
-.item_service {
-  display: flex;
-  width: 100%;
-  gap: 10px;
-  margin-right: 0.8rem;
-  font-size: 1em; }
+@media (max-width: 450px) {
+  .service .container_service .item_service {
+    font-size: .5em; }
+    .service .container_service .item_service i {
+      font-size: 20px; } }
 
-.icon_service {
-  width: 2.5em;
-  height: 2.5em; }
-
-@media (max-width: 700px) {
-  .item_service {
-    font-size: 0.75rem; } }
-
-@media (max-width: 520px) {
-  .item_service {
-    font-size: 0.5rem; } }
-
-@media (max-width: 520px) {
-  .item_service {
-    font-size: 0.40rem; } }
+@media (max-width: 370px) {
+  .service .container_service .item_service {
+    font-size: .4em; }
+    .service .container_service .item_service i {
+      font-size: 15px; } }
 
 .container2 {
   position: relative;
@@ -494,7 +496,8 @@ footer input[type='submit']:hover {
 .heading {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  margin-top: 2rem; }
   .heading h1 {
     font-size: 1.6rem;
     font-weight: normal; }
@@ -511,7 +514,7 @@ footer input[type='submit']:hover {
 .container_categories {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, auto));
-  gap: 1rem;
+  gap: 1.5rem;
   margin-top: 2rem;
   color: white; }
   .container_categories .box {
@@ -566,6 +569,7 @@ footer input[type='submit']:hover {
   grid-template-columns: repeat(auto-fit, minmax(260px, auto));
   gap: 1.5rem;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   color: white; }
   .container_products .box {
     padding: 20px;
@@ -926,11 +930,14 @@ footer input[type='submit']:hover {
   .container_card .card {
     width: 60%;
     height: 40%; }
-    .container_card .card .content2 h2 {
-      font-size: 4rem; }
-    .container_card .card .content2 h3 {
-      font-size: 1.5rem; }
-    .container_card .card .content2 p {
-      font-size: 1rem; }
-    .container_card .card .content2 a {
-      font-size: 1rem; } }
+    .container_card .card .content2 {
+      transform: translateY(0px);
+      opacity: 1; }
+      .container_card .card .content2 h2 {
+        font-size: 4rem; }
+      .container_card .card .content2 h3 {
+        font-size: 1.5rem; }
+      .container_card .card .content2 p {
+        font-size: 1rem; }
+      .container_card .card .content2 a {
+        font-size: 1rem; } }

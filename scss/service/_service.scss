@@ -3,42 +3,59 @@
     background-color: rgba(19, 18, 18, 0.1);
     width: 100%;
     color: #212529;
-}
-
-.container_service {
-    display: flex;
-    padding: 1rem;
-    justify-content: space-evenly;
-    width: 100%;
-}
-
-.item_service {
-    display: flex;
-    width: 100%;
-    gap: 10px;
-    margin-right: 0.8rem;
-    font-size: 1em;
-}
-
-.icon_service {
-    width: 2.5em;
-    height: 2.5em;
-}
-
-@media (max-width:700px) {
-    .item_service {
-        font-size: 0.75rem;
+    .container_service {
+        display: flex;
+        padding: 1rem;
+        justify-content: space-evenly;
+        width: 100%;
+        .item_service {
+            display: flex;
+            width: 100%;
+            gap: 10px;
+            margin-right: 0.8rem;
+            font-size: 1em;
+            i {
+                font-size: 30px;
+            }
+        }
     }
 }
 
-@media (max-width:520px) {
-    .item_service {
-        font-size: 0.5rem;
+@media (max-width:600px) {
+    .service {
+        .container_service {
+            .item_service {
+                font-size: .75em;
+                i {
+                    font-size: 20px;
+                }
+            }
+        }
     }
 }
 
-@media (max-width:520px) {
-    .item_service {
-        font-size: 0.40rem;
+@media (max-width:450px) {
+    .service {
+        .container_service {
+            .item_service {
+                font-size: .5em;
+                i {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:370px) {
+    .service {
+        .container_service {
+            .item_service {
+                font-size: .4em;
+                i {
+                    font-size: 15px;
+                }
+            }
+        }
     }
 }
